@@ -44,7 +44,7 @@ for c in sys.stdin.readlines():
                 trans_word+=translit_dict[k]
             else:
                 trans_word += k
-        tokens.append(i, trans_word)
+        tokens.append([i, trans_word])
 
 for i in tokens:
     print(i, tokens.index(i))
