@@ -37,7 +37,7 @@ translit_dict = {'а': 'a',
 tokens = []
 
 for c in sys.stdin.readlines():
-    for i in c.split(''):
+    for i in c.split(' '):
         trans_word = ''
         for k in i.lower():
             if k in translit_dict:
